@@ -1,0 +1,51 @@
+%\title{Example letter using the newlfm LaTeX package}
+%
+% See http://texblog.org/2013/11/11/latexs-alternative-letter-class-newlfm/
+% and http://www.ctan.org/tex-archive/macros/latex/contrib/newlfm
+% for more information.
+%
+\documentclass[12pt,stdletter,orderfromtodate,sigleft]{newlfm}
+\usepackage{blindtext, xfrac}
+ 
+\newlfmP{dateskipbefore=50pt}
+\newlfmP{sigsize=50pt}
+\newlfmP{sigskipbefore=50pt}
+ 
+\newlfmP{Headlinewd=0pt,Footlinewd=0pt}
+ 
+\namefrom{Traffic Impact Analysis Team (57313)}
+\addrfrom{%
+    Team 57313\\
+    Mathmodelingland, WA
+}
+  
+\addrto{%
+    Jay Inslee\\
+    Office of the Governor\\
+    PO Box 40002 \\
+    Olympia, WA 98504-0002
+}
+ 
+\dateset{\today}
+ 
+\greetto{Dear Governor Inslee,}
+ 
+\closeline{Regards,}
+ 
+\begin{document}
+\begin{newlfm}
+
+We write to you concerning your request for an analysis of the \textbf{impact of self-driving cars} on popular roadways in Thurston, Pierce, King, and Snohomish counties. This letter summarizes our exploration of how traffic dynamics on \textbf{I-5, I-90, I-405, and State Route 520} will change as the percentage of self-driving cars on these roads increases. 
+
+It is becoming increasingly likely that commercially available \textbf{self-driving, cooperating cars} will appear on roadways within the next decade.  These cars will play an important role in determining the overall traffic patterns observed in the Puget Sound region.  We approach understanding the impact of self-driving cars on traffic in the greater Seattle area with two models.  First, we examine fundamental traffic dynamics with a discrete cellular automata simulation, which considers the effects of self-driving cars on traffic at the \textbf{micro} level, and then we apply these results to a \textbf{macro model specific to the Puget Sound region}. 
+
+Our preliminary results suggest that the introduction of self-driving cars to the motorways in question will \textbf{increase traffic flow when there is any effect at all}.  This result is encouraging in that we project that self-driving cars will will reduce traffic delays encountered by motorists on the crowded highways of the region.  We are confident that our model provides a \textbf{reasonable \textit{qualitative} forecast} of the impact of self-driving cars on motorways.Our simulation approximates current traffic patters on popular routes (e.g. Federal Way to Seattle) to within 10\% accuracy for most trips at average traffic volume.  However, at higher traffic density, this model is far less accurate at simulating travel times, and a more detailed traffic model should be commissioned before quantitative predictions are taken seriously.  In short, the simplifying assumptions that made the rapid delivery of this report possible necessitate that this \textbf{preliminary investigation be interpreted cautiously}.  For example, we have not explored the psychological effects that the presence of self-driving cars will have on other motorists, the patterns of continuous change in traffic load on Seattle-area roads over the course of a day, the ways that inclement weather conditions will affect all forms of traffic, and a number of other considerations that may be more significant than we understand at present.
+
+The results of our study lead us to believe that self-driving cars will affect traffic positively or not at all for average traffic flow. At higher traffic volumes where traffic delays begin to be encountered, we observe a trend that increasing percentages of self-driving cars lead to reduced travel time for everyone, although this reduction is not extreme (perhaps a half hour delay reduced by ten minutes).  We also note that although this result is consistent with what our expectations, the reduced accuracy of our model at high traffic volumes calls this result into question.  Our simulation suggests that when self-driving cars impact traffic flow at all, \textbf{they improve roadways for everyone}, not only for the owners of self-driving cars. We believe that this observation has important policy recommendations implications.
+
+First and foremost, this study indicates that policy designed to enable self-driving cars to naturally integrate into the sections of Interstates under investigation \textbf{will not negatively affect driving conditions}.  Furthermore our micro model predicts that, with a percentage of self-driving cars as low as 5\% on moderately crowded roads, it is advisable to \textbf{designate a ``self-driving-cars only'' lane}.  Such a lane is only beneficial to traffic flow on roads at least three lanes wide. We recognize that such autonomous-only lanes may be politically sensitive and that factors not included in our models may affect the performance of such lanes in reducing traffic, so we strongly encourage that policy to create these lanes be \textbf{enacted on a trial basis} to assess its feasibility.   
+
+Please do not hesitate to direct any further inquiries regarding the contents of this letter to our communications office.  We would like to thank you for consulting with us, and we remind you that our firm is now well-equipped to provide similar impact studies on other roadways in a fraction of the time.
+
+\end{newlfm}
+\end{document}
